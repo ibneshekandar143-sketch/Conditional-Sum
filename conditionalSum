@@ -1,0 +1,22 @@
+package com.problemsolving;
+
+import java.util.Scanner;
+
+public class ConditionalSum {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum = 0;
+
+        while (true){
+            System.out.println("Enter integer (or type '-1' to exit");
+            int input = sc.nextInt();
+            if (input== -1){
+                break;
+            }
+            sum += input;
+        }
+
+        System.out.println("Total sum of inputted numbers: "+ sum);
+    }
+
+}
